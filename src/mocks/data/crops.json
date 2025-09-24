@@ -1,0 +1,26 @@
+[
+  {
+    "cropName": "Tomato",
+    "expectedYieldKgPerHectare": 40000,
+    "profitEstimateINR": 120000,
+    "sustainabilityScore": 78,
+    "recommendedFertilizers": ["NPK 10-26-26", "Compost"],
+    "image": "https://images.unsplash.com/photo-1546470420-9f84f8a4eae1"
+  },
+  {
+    "cropName": "Wheat",
+    "expectedYieldKgPerHectare": 3500,
+    "profitEstimateINR": 90000,
+    "sustainabilityScore": 82,
+    "recommendedFertilizers": ["DAP", "Urea"],
+    "image": "https://images.unsplash.com/photo-1465406325220-52c0baf2d0a1"
+  },
+  {
+    "cropName": "Onion",
+    "expectedYieldKgPerHectare": 25000,
+    "profitEstimateINR": 100000,
+    "sustainabilityScore": 75,
+    "recommendedFertilizers": ["MOP", "Vermicompost"],
+    "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6"
+  }
+]

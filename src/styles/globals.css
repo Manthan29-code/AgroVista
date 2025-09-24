@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities and tokens */
+:root {
+  --color-primary: #2F855A;
+  --color-accent: #68D391;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-button px-4 py-2 font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-primary {
+  @apply bg-primary text-white hover:bg-emerald-700;
+}
+.btn-secondary {
+  @apply bg-white text-primary border border-primary hover:bg-emerald-50;
+}
+.card {
+  @apply rounded-card bg-white shadow p-4;
+}
+.container-responsive {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
