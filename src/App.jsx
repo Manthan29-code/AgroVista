@@ -10,6 +10,7 @@ import PestDiagnosis from './pages/PestDiagnosis.jsx';
 import Market from './pages/Market.jsx';
 import Profile from './pages/Profile.jsx';
 import NotFound from './pages/NotFound.jsx';
+import Feedback from './pages/Feedback.jsx';
 import { useAuth } from './context/AuthContext.jsx';
 
 function Protected({ children }) {
@@ -78,6 +79,14 @@ export default function App() {
               <Market />
             </MainLayout>
           </Protected>
+        }
+      />
+      <Route
+        path="/feedback"
+        element={
+          <MainLayout>
+            <Feedback />
+          </MainLayout>
         }
       />
       <Route

@@ -1,0 +1,46 @@
+[
+	{
+		"id": "fb-001",
+		"farmerName": "Ravi Sharma",
+		"location": "Ahmedabad, Gujarat",
+		"solution": "AI Crop & Fertilizer Recommendation",
+		"reference": "Switched to mung beans on 3-acre plot",
+		"description": "The suggested crop rotation restored soil nitrogen quickly and reduced irrigation by 20%. Yield improved without extra cost.",
+		"rating": 5,
+		"impact": "+18% yield · water savings",
+		"submittedAt": "2025-07-12T10:15:00Z"
+	},
+	{
+		"id": "fb-002",
+		"farmerName": "Anita Patel",
+		"location": "Surat, Gujarat",
+		"solution": "Weather Smart Alerts",
+		"reference": "Heatwave advisory before cotton flowering",
+		"description": "Alerts arrived two days early which helped us adjust irrigation cycles and protect the flowering stage from heat stress.",
+		"rating": 4,
+		"impact": "Prevented estimated ₹36k loss",
+		"submittedAt": "2025-08-03T08:40:00Z"
+	},
+	{
+		"id": "fb-003",
+		"farmerName": "Sukhdev Singh",
+		"location": "Ludhiana, Punjab",
+		"solution": "Market Linkage",
+		"reference": "Matched with mandi offering 7% premium",
+		"description": "Real-time mandi rates were handy. Sold wheat at a better price without relying on agents.",
+		"rating": 5,
+		"impact": "+₹1.2 lakh seasonal profit",
+		"submittedAt": "2025-08-24T13:05:00Z"
+	},
+	{
+		"id": "fb-004",
+		"farmerName": "Priya Deshmukh",
+		"location": "Nagpur, Maharashtra",
+		"solution": "Pest & Disease Scan",
+		"reference": "Identified early-stage blight in tomatoes",
+		"description": "AI detected the issue from a phone image. Followed recommended organic spray and contained the spread.",
+		"rating": 4,
+		"impact": "Protected 85% of crop",
+		"submittedAt": "2025-09-02T17:20:00Z"
+	}
+]

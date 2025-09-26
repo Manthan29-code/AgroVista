@@ -4,7 +4,7 @@ import { useAuth } from '../../context/AuthContext.jsx';
 export default function Header() {
   const { user, logout } = useAuth();
   return (
-    <header className="bg-white border-b sticky top-0 z-10">
+  <header className="bg-white border-b sticky top-0 z-30">
       <div className="container-responsive flex items-center justify-between h-14">
         <Link to="/" className="font-semibold text-primary">AgroVista</Link>
         <nav className="hidden md:flex gap-4">
@@ -13,6 +13,7 @@ export default function Header() {
           <NavLink to="/recommendations" className={({isActive}) => isActive ? 'text-primary' : 'text-slate-600'}>Recommendations</NavLink>
           <NavLink to="/pest-scan" className={({isActive}) => isActive ? 'text-primary' : 'text-slate-600'}>Pest Scan</NavLink>
           <NavLink to="/market" className={({isActive}) => isActive ? 'text-primary' : 'text-slate-600'}>Market</NavLink>
+          <NavLink to="/feedback" className={({isActive}) => isActive ? 'text-primary' : 'text-slate-600'}>Feedback</NavLink>
           <NavLink to="/profile" className={({isActive}) => isActive ? 'text-primary' : 'text-slate-600'}>Profile</NavLink>
         </nav>
         <div className="flex items-center gap-2">

@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import useOffline from './useOffline.js';
 import * as api from '../services/apiClient.js';
 
@@ -8,11 +9,13 @@ export default function useMockApi() {
     await new Promise((r) => setTimeout(r, 400));
     return fn();
   };
-  return {
+  return useMemo(() => ({
     getUserProfile: () => guard(api.getUserProfile),
     getSoilByLocation: (loc) => guard(() => api.getSoilByLocation(loc)),
     postRecommendations: (payload) => guard(() => api.postRecommendations(payload)),
     postPestScan: (file) => guard(() => api.postPestScan(file)),
     getMarkets: (crop, near) => guard(() => api.getMarkets(crop, near)),
-  };
+    getFeedbackList: () => guard(api.getFeedbackList),
+    postFeedback: (payload) => guard(() => api.postFeedback(payload)),
+  }), [isOffline]);
 }

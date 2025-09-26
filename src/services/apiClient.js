@@ -1,6 +1,7 @@
 import user from '../mocks/data/user.json';
 import crops from '../mocks/data/crops.json';
 import markets from '../mocks/data/markets.json';
+import feedback from '../mocks/data/feedback.json';
 
 export async function getUserProfile(){
   return user;
@@ -32,4 +33,16 @@ export async function postPestScan(file){
 
 export async function getMarkets(crop, near){
   return markets;
+}
+
+export async function getFeedbackList(){
+  return feedback;
+}
+
+export async function postFeedback(entry){
+  return {
+    id: `fb-${Date.now()}`,
+    submittedAt: new Date().toISOString(),
+    ...entry,
+  };
 }
